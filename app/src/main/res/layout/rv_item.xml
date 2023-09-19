@@ -6,7 +6,8 @@
     android:background="@drawable/radius"
     android:orientation="vertical"
     android:layout_margin="18dp"
-    android:padding="5dp">
+    android:padding="5dp"
+    android:elevation="5dp">
     <ImageView
         android:id="@+id/rvImageArea"
         android:src="@drawable/ic_launcher_background"

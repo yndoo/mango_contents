@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "985259064966",
+    "project_id": "mango-project-75cc2",
+    "storage_bucket": "mango-project-75cc2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:985259064966:android:0e188afd27f1e70a075b07",
+        "android_client_info": {
+          "package_name": "com.yndoo.mango_contents"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBcpXPD09wAQjTvEP_XGJ8MoQ7fBUNA2PE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

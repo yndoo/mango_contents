@@ -1,8 +1,10 @@
 package com.yndoo.mango_contents
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
+import android.widget.ImageView
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
@@ -115,11 +117,20 @@ class MainActivity : AppCompatActivity() {
         rvAdapter.itemClick = object: RVAdapter.ItemClick {
             override fun onClick(view: View, position: Int) {
 
+                val intent = Intent(baseContext, ViewActivity::class.java)
+                intent.putExtra("url",items[position].url)
+                intent.putExtra("title",items[position].titleText)
+                intent.putExtra("image",items[position].imageUrl)
+                startActivity(intent)
 
 
             }
         }
 
         recyclerview.layoutManager = GridLayoutManager(this, 2)
+
+        findViewById<ImageView>(R.id.bookmarksImg).setOnClickListener {
+            startActivity(Intent(this, BookmarkActivity::class.java))
+        }
     }
 }
